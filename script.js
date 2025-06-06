@@ -1,13 +1,13 @@
 const recipes = [
   {
     title: "Spaghetti Bolognese",
-    image: "images/spaghetti.jpg",
+    image: "src/img/spaghetti.jpg",
     ingredients: ["Spaghetti", "Meat", "Tomato Sauce"],
     steps: "Boil pasta. Cook meat. Mix with sauce."
   },
   {
     title: "Vegetable Salad",
-    image: "images/salad.jpg",
+    image: "scr/img/salad.jpg",
     ingredients: ["Lettuce", "Tomato", "Cucumber", "Olive oil"],
     steps: "Chop veggies. Mix and serve."
   }
