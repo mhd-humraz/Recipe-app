@@ -10,6 +10,12 @@ const recipes = [
     image: "images/salad.jpg",
     ingredients: ["Lettuce", "Tomato", "Cucumber", "Olive oil"],
     steps: "Chop veggies. Mix and serve."
+  },
+  {
+    title: "Chicken Curry",
+    image: "images/chicken-curry.jpg",
+    ingredients: ["Chicken", "Onions", "Tomatoes", "Spices"],
+    steps: "Cook onions. Add chicken and spices. Simmer with tomatoes."
   }
 ];
 
@@ -35,5 +41,5 @@ if (recipe) {
 
   document.getElementById("steps").textContent = recipe.steps;
 } else {
-  document.body.innerHTML = "<h2>Recipe not found.</h2>";
+  document.body.innerHTML = "<h2>Recipe not found.</h2><a href='index.html'>Back to home</a>";
 }
