@@ -8,7 +8,7 @@ steps: "Marinate chicken with yogurt and spices. Fry onions until golden. Cook c
   },
   {
     title: "Vegetable Salad",
-    image: "scr/img/salad.jpg",
+    image: "src/img/salad.jpg",
     ingredients: ["Lettuce", "Tomato", "Cucumber", "Olive oil"],
     steps: "Chop veggies. Mix and serve."
   }
