@@ -11,6 +11,23 @@ steps: "Marinate chicken with yogurt and spices. Fry onions until golden. Cook c
     image: "src/img/salad.jpg",
     ingredients: ["Lettuce", "Tomato", "Cucumber", "Olive oil"],
     steps: "Chop veggies. Mix and serve."
+  },
+  {
+    title: "Masala Dosa",
+    image: "src/img/masala-dosa.jpg",
+    ingredients: ["Dosa batter","Potatoes","Onions","Green chilies","Mustard seeds", "Curry leaves","Turmeric powder", "Salt", "Oil","Ginger",
+  "Coriander leaves"
+],
+steps: "Boil and mash potatoes. In a pan, heat oil, add mustard seeds, curry leaves, chopped onions, green chilies, and ginger. Sauté, then add turmeric and salt. Mix in mashed potatoes and coriander leaves for the filling. Heat dosa pan, spread batter thinly, cook until crisp. Place potato filling inside, fold and serve hot."
+
+  },
+  {
+    title: "Puttu",
+    image: "src/img/puttu.jpg",
+    ingredients: ["Rice flour","Grated coconut","Salt","Water"
+],
+steps: "Mix rice flour with salt and enough water to make a crumbly mixture. Layer the puttu maker with grated coconut and the rice flour mixture alternately. Steam the layers for about 5-7 minutes until cooked. Serve hot with banana, chickpea curry, or kadala curry."
+
   }
 ];
 
