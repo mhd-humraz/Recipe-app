@@ -1,9 +1,10 @@
 const recipes = [
   {
-    title: "Spaghetti Bolognese",
-    image: "src/img/spaghetti.jpg",
-    ingredients: ["Spaghetti", "Meat", "Tomato Sauce"],
-    steps: "Boil pasta. Cook meat. Mix with sauce."
+    title: "Chicken Biryani",
+image: "src/img/chicken-biryani.jpg",
+ingredients: ["Basmati Rice", "Chicken", "Yogurt", "Onions", "Tomatoes", "Biryani Spices", "Garlic", "Ginger", "Cilantro", "Mint", "Oil", "Salt"],
+steps: "Marinate chicken with yogurt and spices. Fry onions until golden. Cook chicken with tomatoes and spices.Boil rice separately. Layer chicken and rice. Cook on low heat (dum) until done. Garnish with cilantro and mint."
+
   },
   {
     title: "Vegetable Salad",
