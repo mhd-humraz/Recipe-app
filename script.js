@@ -1,7 +1,7 @@
 const recipes = [
  {
   title: "Masala Dosa",
-  image: "images/masala-dosa.jpg",
+  image: "src/img/masala-dosa.jpg",
   ingredients: ["Dosa batter", "Potatoes", "Onions", "Turmeric", "Mustard seeds", "Curry leaves"],
   steps: "Prepare potato masala.. Add masala filling. Fold and serve hot with chutney."
 },
