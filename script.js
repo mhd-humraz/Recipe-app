@@ -75,7 +75,6 @@ Add scrambled eggs and spring onions. Serve hot.`
   }
 ];
 
-];
 
 const container = document.getElementById("recipes-container");
 const searchInput = document.getElementById("search");
