@@ -37,8 +37,66 @@ Serve hot with coconut chutney and sambar. Enjoy your delicious Masala Dosa!`
     image: "src/img/chiken-biryani.jpg",
     ingredients: ["Chicken", "Onions", "Tomatoes", "Spices"],
     steps: "Cook onions. Add chicken and spices. Simmer with tomatoes."
+  },
+   {
+    title: "Puttu with Kadala Curry",
+    image: "src/img/puttu.jpg",
+    ingredients: [
+      "Puttu podi (rice flour)",
+      "Grated coconut",
+      "Water",
+      "Black chickpeas (kadala)",
+      "Onion, tomato, green chili",
+      "Ginger, garlic, curry leaves",
+      "Turmeric, chili powder, garam masala",
+      "Salt and oil"
+    ],
+    steps: `Soak black chickpeas overnight and pressure cook until soft.
+In a pan, sauté onion, tomato, ginger, garlic, and curry leaves.
+Add turmeric, chili powder, garam masala, and salt. Cook well.
+Add cooked chickpeas and simmer for 10 minutes.
+To prepare puttu, mix rice flour with water until crumbly.
+Layer grated coconut and flour alternately in a puttu maker.
+Steam for 5-6 minutes and serve hot with kadala curry.`
+  },
+  {
+    title: "Paneer Butter Masala",
+    image: "src/img/paneer-butter.jpg",
+    ingredients: [
+      "Paneer cubes",
+      "Tomatoes, onion, garlic, ginger",
+      "Butter, cream",
+      "Cashews",
+      "Garam masala, chili powder, turmeric",
+      "Kasuri methi (dry fenugreek)",
+      "Salt, sugar"
+    ],
+    steps: `Sauté onions, garlic, ginger, and tomatoes. Blend to a smooth paste with cashews.
+Heat butter in a pan, add the paste and spices. Cook until oil separates.
+Add cream, salt, and sugar. Mix well.
+Add paneer cubes and simmer for 5 minutes.
+Garnish with kasuri methi and serve with naan or rice.`
+  },
+  {
+    title: "Egg Fried Rice",
+    image: "src/img/egg-fried-rice.jpg",
+    ingredients: [
+      "Cooked rice",
+      "Eggs",
+      "Carrots, beans, capsicum",
+      "Spring onions",
+      "Soy sauce, pepper, salt",
+      "Oil"
+    ],
+    steps: `Scramble eggs in a hot wok and set aside.
+Sauté chopped vegetables until slightly tender.
+Add cooked rice and mix well.
+Pour soy sauce, pepper, and salt. Stir-fry everything.
+Add scrambled eggs and spring onions. Serve hot.`
   }
 ];
+
+
 
 function getQueryParam(param) {
   const urlParams = new URLSearchParams(window.location.search);
