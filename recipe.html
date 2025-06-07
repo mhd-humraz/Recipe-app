@@ -4,17 +4,94 @@
   <meta charset="UTF-8" />
   <title>Recipe Details</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+/* Recipe Details Page Enhancements */
+body {
+  background-color: #f0f4f8; /* soft light blue-gray */
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+#recipe-image {
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#recipe-title {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #34495e;
+  margin-top: 20px;
+}
+
+#ingredients-list {
+  list-style-type: disc;
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+
+#ingredients-list li {
+  padding: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+#steps {
+  background-color: #fff;
+  padding: 15px;
+  border-left: 5px solid #3498db;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  line-height: 1.6;
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  color: #3498db;
+  font-weight: bold;
+}
+.recipe-wrapper {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  margin-top: 40px;
+}
+#ingredients-list,
+#steps {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+
+</style>
 </head>
 <body>
-  <h1 id="recipe-title"></h1>
-  <img id="recipe-image" src="" alt="" style="max-width: 400px;" />
-  <h3>Ingredients:</h3>
-  <ul id="ingredients-list"></ul>
-  <h3>Steps:</h3>
-  <p id="steps"></p>
-
-  <a href="index.html">← Back to recipes </a>
-
+  <div class="recipe-wrapper">
+    <h1 id="recipe-title"></h1>
+    <img id="recipe-image" src="" alt="" style="max-width: 400px;" />
+    <h3>Ingredients:</h3>
+    <ul id="ingredients-list"></ul>
+    <h3>Steps:</h3>
+    <p id="steps"></p>
+    <a href="index.html">← Back to recipes </a>
+  </div>
   <script src="recipe.js"></script>
 </body>
+
 </html>
