@@ -1,10 +1,10 @@
 const recipes = [
-  {
-    title: "Spaghetti Bolognese",
-    image: "images/spaghetti.jpg",
-    ingredients: ["Spaghetti", "Meat", "Tomato Sauce"],
-    steps: "Boil pasta. Cook meat. Mix with sauce."
-  },
+ {
+  title: "Masala Dosa",
+  image: "images/masala-dosa.jpg",
+  ingredients: ["Dosa batter", "Potatoes", "Onions", "Turmeric", "Mustard seeds", "Curry leaves"],
+  steps: "Prepare potato masala.. Add masala filling. Fold and serve hot with chutney."
+},
   {
     title: "Vegetable Salad",
     image: "images/salad.jpg",
