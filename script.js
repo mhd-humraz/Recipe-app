@@ -12,11 +12,11 @@ const recipes = [
     steps: "Chop veggies. Mix and serve."
   },
   {
-    title: "Chicken Curry",
-    image: "images/chicken-curry.jpg",
+    title: "Chicken Biriyani",
+    image: "src/img/chiken-biryani.jpg",
     ingredients: ["Chicken", "Onions", "Tomatoes", "Spices"],
     steps: "Cook onions. Add chicken and spices. Simmer with tomatoes."
-  }
+ }
 ];
 
 const container = document.getElementById("recipes-container");
