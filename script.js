@@ -7,7 +7,7 @@ const recipes = [
 },
   {
     title: "Vegetable Salad",
-    image: "images/salad.jpg",
+    image: "src/img/salad.jpg",
     ingredients: ["Lettuce", "Tomato", "Cucumber", "Olive oil"],
     steps: "Chop veggies. Mix and serve."
   },
