@@ -7,13 +7,13 @@ const recipes = [
   },
   {
     title: "Vegetable Salad",
-    image: "images/salad.jpg",
+    image: "src/img/salad.jpg",
     ingredients: ["Lettuce", "Tomato", "Cucumber", "Olive oil"],
     steps: "Chop veggies. Mix and serve."
   },
   {
-    title: "Chicken Curry",
-    image: "images/chicken-curry.jpg",
+    title: "Chicken Biriyani",
+    image: "src/img/chiken-biryani.jpg",
     ingredients: ["Chicken", "Onions", "Tomatoes", "Spices"],
     steps: "Cook onions. Add chicken and spices. Simmer with tomatoes."
   }
@@ -24,22 +24,32 @@ function getQueryParam(param) {
   return urlParams.get(param);
 }
 
-const recipeTitle = getQueryParam("title");
-const recipe = recipes.find(r => r.title === recipeTitle);
+window.addEventListener("DOMContentLoaded", () => {
+  const recipeTitle = getQueryParam("title");
+  const recipe = recipes.find(r => r.title === recipeTitle);
 
-if (recipe) {
-  document.getElementById("recipe-title").textContent = recipe.title;
-  document.getElementById("recipe-image").src = recipe.image;
-  document.getElementById("recipe-image").alt = recipe.title;
+  // Debug logging (optional)
+  console.log("Selected recipe title from URL:", recipeTitle);
+  console.log("Recipe found:", recipe);
 
-  const ingredientsList = document.getElementById("ingredients-list");
-  recipe.ingredients.forEach(ingredient => {
-    const li = document.createElement("li");
-    li.textContent = ingredient;
-    ingredientsList.appendChild(li);
-  });
+  if (recipe) {
+    document.getElementById("recipe-title").textContent = recipe.title;
+    const imageElement = document.getElementById("recipe-image");
+    imageElement.src = recipe.image;
+    imageElement.alt = recipe.title;
 
-  document.getElementById("steps").textContent = recipe.steps;
-} else {
-  document.body.innerHTML = "<h2>Recipe not found.</h2><a href='index.html'>Back to home</a>";
-}
+    const ingredientsList = document.getElementById("ingredients-list");
+    recipe.ingredients.forEach(ingredient => {
+      const li = document.createElement("li");
+      li.textContent = ingredient;
+      ingredientsList.appendChild(li);
+    });
+
+    document.getElementById("steps").textContent = recipe.steps;
+  } else {
+    document.body.innerHTML = `
+      <h2>Recipe not found.</h2>
+      <a href="index.html">← Back to home</a>
+    `;
+  }
+});
