@@ -2,23 +2,747 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Recipe App - Home</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
- <body> 
-   
-    <header>
-       <nav>
-         <a href="index.html">Home</a>
-         <a href="#">About</a>
-         <a href="#">Contact</a>
-       </nav>
-    </header>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">Recipes Kitchen</a>
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
+  <main class="main-content">
+    <div class="container">
+      <section class="search-section">
+        <h1 class="title">Discover Delicious Recipes</h1>
+        <p class="subtitle">Find your next favorite meal</p>
+        <div class="search-container">
+          <input type="text" id="search" placeholder="Search recipes..." class="search-input" />
+          <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+      </section>
 
-  <h1>Recipes Kitchen </h1>
-  <input type="text" id="search" placeholder="Search recipes..." />
-  <div id="recipes-container"></div>
+      <section class="filters">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Vegetarian</button>
+        <button class="filter-btn">Vegan</button>
+        <button class="filter-btn">Gluten-Free</button>
+        <button class="filter-btn">Desserts</button>
+      </section>
+
+      <div id="recipes-container" class="recipes-grid"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Recipes Kitchen. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe App - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">Recipes Kitchen</a>
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <section class="search-section">
+        <h1 class="title">Discover Delicious Recipes</h1>
+        <p class="subtitle">Find your next favorite meal</p>
+        <div class="search-container">
+          <input type="text" id="search" placeholder="Search recipes..." class="search-input" />
+          <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+      </section>
+
+      <section class="filters">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Vegetarian</button>
+        <button class="filter-btn">Vegan</button>
+        <button class="filter-btn">Gluten-Free</button>
+        <button class="filter-btn">Desserts</button>
+      </section>
+
+      <div id="recipes-container" class="recipes-grid"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Recipes Kitchen. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe App - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">Recipes Kitchen</a>
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <section class="search-section">
+        <h1 class="title">Discover Delicious Recipes</h1>
+        <p class="subtitle">Find your next favorite meal</p>
+        <div class="search-container">
+          <input type="text" id="search" placeholder="Search recipes..." class="search-input" />
+          <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+      </section>
+
+      <section class="filters">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Vegetarian</button>
+        <button class="filter-btn">Vegan</button>
+        <button class="filter-btn">Gluten-Free</button>
+        <button class="filter-btn">Desserts</button>
+      </section>
+
+      <div id="recipes-container" class="recipes-grid"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Recipes Kitchen. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe App - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">Recipes Kitchen</a>
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <section class="search-section">
+        <h1 class="title">Discover Delicious Recipes</h1>
+        <p class="subtitle">Find your next favorite meal</p>
+        <div class="search-container">
+          <input type="text" id="search" placeholder="Search recipes..." class="search-input" />
+          <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+      </section>
+
+      <section class="filters">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Vegetarian</button>
+        <button class="filter-btn">Vegan</button>
+        <button class="filter-btn">Gluten-Free</button>
+        <button class="filter-btn">Desserts</button>
+      </section>
+
+      <div id="recipes-container" class="recipes-grid"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Recipes Kitchen. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe App - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">Recipes Kitchen</a>
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <section class="search-section">
+        <h1 class="title">Discover Delicious Recipes</h1>
+        <p class="subtitle">Find your next favorite meal</p>
+        <div class="search-container">
+          <input type="text" id="search" placeholder="Search recipes..." class="search-input" />
+          <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+      </section>
+
+      <section class="filters">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Vegetarian</button>
+        <button class="filter-btn">Vegan</button>
+        <button class="filter-btn">Gluten-Free</button>
+        <button class="filter-btn">Desserts</button>
+      </section>
+
+      <div id="recipes-container" class="recipes-grid"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Recipes Kitchen. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe App - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">Recipes Kitchen</a>
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <section class="search-section">
+        <h1 class="title">Discover Delicious Recipes</h1>
+        <p class="subtitle">Find your next favorite meal</p>
+        <div class="search-container">
+          <input type="text" id="search" placeholder="Search recipes..." class="search-input" />
+          <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+      </section>
+
+      <section class="filters">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Vegetarian</button>
+        <button class="filter-btn">Vegan</button>
+        <button class="filter-btn">Gluten-Free</button>
+        <button class="filter-btn">Desserts</button>
+      </section>
+
+      <div id="recipes-container" class="recipes-grid"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Recipes Kitchen. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe App - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">Recipes Kitchen</a>
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <section class="search-section">
+        <h1 class="title">Discover Delicious Recipes</h1>
+        <p class="subtitle">Find your next favorite meal</p>
+        <div class="search-container">
+          <input type="text" id="search" placeholder="Search recipes..." class="search-input" />
+          <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+      </section>
+
+      <section class="filters">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Vegetarian</button>
+        <button class="filter-btn">Vegan</button>
+        <button class="filter-btn">Gluten-Free</button>
+        <button class="filter-btn">Desserts</button>
+      </section>
+
+      <div id="recipes-container" class="recipes-grid"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Recipes Kitchen. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe App - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">Recipes Kitchen</a>
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <section class="search-section">
+        <h1 class="title">Discover Delicious Recipes</h1>
+        <p class="subtitle">Find your next favorite meal</p>
+        <div class="search-container">
+          <input type="text" id="search" placeholder="Search recipes..." class="search-input" />
+          <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+      </section>
+
+      <section class="filters">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Vegetarian</button>
+        <button class="filter-btn">Vegan</button>
+        <button class="filter-btn">Gluten-Free</button>
+        <button class="filter-btn">Desserts</button>
+      </section>
+
+      <div id="recipes-container" class="recipes-grid"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Recipes Kitchen. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe App - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">Recipes Kitchen</a>
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <section class="search-section">
+        <h1 class="title">Discover Delicious Recipes</h1>
+        <p class="subtitle">Find your next favorite meal</p>
+        <div class="search-container">
+          <input type="text" id="search" placeholder="Search recipes..." class="search-input" />
+          <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+      </section>
+
+      <section class="filters">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Vegetarian</button>
+        <button class="filter-btn">Vegan</button>
+        <button class="filter-btn">Gluten-Free</button>
+        <button class="filter-btn">Desserts</button>
+      </section>
+
+      <div id="recipes-container" class="recipes-grid"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Recipes Kitchen. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe App - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">Recipes Kitchen</a>
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <section class="search-section">
+        <h1 class="title">Discover Delicious Recipes</h1>
+        <p class="subtitle">Find your next favorite meal</p>
+        <div class="search-container">
+          <input type="text" id="search" placeholder="Search recipes..." class="search-input" />
+          <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+      </section>
+
+      <section class="filters">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Vegetarian</button>
+        <button class="filter-btn">Vegan</button>
+        <button class="filter-btn">Gluten-Free</button>
+        <button class="filter-btn">Desserts</button>
+      </section>
+
+      <div id="recipes-container" class="recipes-grid"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Recipes Kitchen. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe App - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">Recipes Kitchen</a>
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <section class="search-section">
+        <h1 class="title">Discover Delicious Recipes</h1>
+        <p class="subtitle">Find your next favorite meal</p>
+        <div class="search-container">
+          <input type="text" id="search" placeholder="Search recipes..." class="search-input" />
+          <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+      </section>
+
+      <section class="filters">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Vegetarian</button>
+        <button class="filter-btn">Vegan</button>
+        <button class="filter-btn">Gluten-Free</button>
+        <button class="filter-btn">Desserts</button>
+      </section>
+
+      <div id="recipes-container" class="recipes-grid"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Recipes Kitchen. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe App - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">Recipes Kitchen</a>
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <section class="search-section">
+        <h1 class="title">Discover Delicious Recipes</h1>
+        <p class="subtitle">Find your next favorite meal</p>
+        <div class="search-container">
+          <input type="text" id="search" placeholder="Search recipes..." class="search-input" />
+          <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+      </section>
+
+      <section class="filters">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Vegetarian</button>
+        <button class="filter-btn">Vegan</button>
+        <button class="filter-btn">Gluten-Free</button>
+        <button class="filter-btn">Desserts</button>
+      </section>
+
+      <div id="recipes-container" class="recipes-grid"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Recipes Kitchen. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe App - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">Recipes Kitchen</a>
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <section class="search-section">
+        <h1 class="title">Discover Delicious Recipes</h1>
+        <p class="subtitle">Find your next favorite meal</p>
+        <div class="search-container">
+          <input type="text" id="search" placeholder="Search recipes..." class="search-input" />
+          <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+      </section>
+
+      <section class="filters">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Vegetarian</button>
+        <button class="filter-btn">Vegan</button>
+        <button class="filter-btn">Gluten-Free</button>
+        <button class="filter-btn">Desserts</button>
+      </section>
+
+      <div id="recipes-container" class="recipes-grid"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Recipes Kitchen. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe App - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">Recipes Kitchen</a>
+        <div class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container">
+      <section class="search-section">
+        <h1 class="title">Discover Delicious Recipes</h1>
+        <p class="subtitle">Find your next favorite meal</p>
+        <div class="search-container">
+          <input type="text" id="search" placeholder="Search recipes..." class="search-input" />
+          <button class="search-button"><i class="fas fa-search"></i></button>
+        </div>
+      </section>
+      <div id="recipes-container" class="recipes-grid"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Recipes Kitchen. All rights reserved.humraz</p>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
