@@ -68,3 +68,27 @@ This project is licensed under the MIT License.
 Created and maintained by **Mhd Humraz**.
 Special thanks to all who inspired and contributed ideas.
 
+## future plans
+ 
+ Add recipe categories (e.g., Breakfast, Lunch, Dinner, Desserts)
+
+ Enable "Add to Favorites" feature using localStorage
+
+ Implement a Dark Mode toggle for better accessibility
+
+ Connect to a backend/database for real-time recipe management
+
+ Add user-submitted recipes functionality
+
+ Optimize for mobile-first performance
+
+ Add recipe duration and difficulty tags
+
+ Include filtering and sorting (e.g., by prep time, difficulty)
+
+ Add animations for better UI/UX experience
+
+ Improve accessibility (ARIA labels, keyboard navigation)
+
+
+
