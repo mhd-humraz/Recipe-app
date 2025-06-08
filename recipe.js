@@ -38,44 +38,85 @@ Serve hot with coconut chutney and sambar. Enjoy your delicious Masala Dosa!`
     ingredients: ["Chicken", "Onions", "Tomatoes", "Spices"],
     steps: "Cook onions. Add chicken and spices. Simmer with tomatoes."
   },
-   {
+    {
     title: "Puttu with Kadala Curry",
     image: "src/img/puttu.jpg",
     ingredients: [
-      "Puttu podi (rice flour)",
-      "Grated coconut",
-      "Water",
-      "Black chickpeas (kadala)",
-      "Onion, tomato, green chili",
-      "Ginger, garlic, curry leaves",
-      "Turmeric, chili powder, garam masala",
-      "Salt and oil"
+      "2 cups puttu podi (rice flour)",
+      "1 cup grated coconut",
+      "Water (for steaming)",
+      "1 cup black chickpeas (kadala), soaked overnight",
+      "1 onion, chopped",
+      "1 tomato, chopped",
+      "1 green chili, sliced",
+      "Small piece ginger + 2 cloves garlic, chopped",
+      "A few curry leaves",
+      "1/2 tsp turmeric",
+      "1 tsp chili powder",
+      "1 tsp garam masala",
+      "Salt",
+      "1 tbsp oil"
     ],
-    steps: `Soak black chickpeas overnight and pressure cook until soft.
-In a pan, sauté onion, tomato, ginger, garlic, and curry leaves.
-Add turmeric, chili powder, garam masala, and salt. Cook well.
-Add cooked chickpeas and simmer for 10 minutes.
-To prepare puttu, mix rice flour with water until crumbly.
-Layer grated coconut and flour alternately in a puttu maker.
-Steam for 5-6 minutes and serve hot with kadala curry.`
+    steps: `Soak chickpeas overnight, drain, and pressure-cook with water until soft (~15 min cooking, 10 min pressure).
+In a pan, heat oil, sauté onion, tomato, green chili, ginger, garlic, and curry leaves for ~4 minutes.
+Add turmeric, chili powder, garam masala, salt—cook ~2 minutes.
+Stir in cooked chickpeas, simmer ~10 minutes until curry thickens. Adjust salt.
+For puttu, mix rice flour with water and salt until crumbly (looks like wet sand).
+Layer grated coconut and flour in the puttu maker.
+Steam for ~5–6 minutes until done. Serve with curry.`
   },
   {
     title: "Paneer Butter Masala",
     image: "src/img/paneer-butter.jpg",
     ingredients: [
-      "Paneer cubes",
-      "Tomatoes, onion, garlic, ginger",
-      "Butter, cream",
-      "Cashews",
-      "Garam masala, chili powder, turmeric",
-      "Kasuri methi (dry fenugreek)",
-      "Salt, sugar"
+      "200 g paneer cubes",
+      "2 tomatoes, chopped",
+      "1 onion, chopped",
+      "2 cloves garlic",
+      "Piece of ginger",
+      "2 tbsp butter",
+      "2 tbsp cream",
+      "6–8 cashews",
+      "1 tsp garam masala",
+      "1 tsp chili powder",
+      "½ tsp turmeric",
+      "½ tsp kasuri methi",
+      "Salt",
+      "1 tsp sugar"
     ],
-    steps: `Sauté onions, garlic, ginger, and tomatoes. Blend to a smooth paste with cashews.
-Heat butter in a pan, add the paste and spices. Cook until oil separates.
-Add cream, salt, and sugar. Mix well.
-Add paneer cubes and simmer for 5 minutes.
-Garnish with kasuri methi and serve with naan or rice.`
+    steps: `In oil, sauté onion, garlic, ginger, tomatoes, and cashews, cook ~6 minutes until softened.
+Let cool, then blend to a smooth paste.
+Heat butter in pan, add paste and spices; cook ~5 minutes until oil separates.
+Stir in cream, salt, sugar; cook ~2 minutes.
+Add paneer cubes, simmer ~5 minutes.
+Crush kasuri methi in hand, sprinkle on top.
+Serve warm with naan, roti, or rice.`
+  },
+  {
+    title: "Beef Biryani",
+    image: "src/img/beef-biryani.jpg",
+    ingredients: [
+      "500 g beef, cubed",
+      "2 cups basmati rice",
+      "2 onions, thinly sliced",
+      "2 tomatoes, chopped",
+      "2 tbsp ginger garlic paste",
+      "1/2 cup yogurt",
+      "Whole spices (bay leaf, cinnamon, cardamom, cloves)",
+      "2 tsp biryani masala",
+      "1/2 tsp turmeric",
+      "1 tsp chili powder",
+      "Fresh coriander and mint leaves",
+      "Ghee or oil",
+      "Salt"
+    ],
+    steps: `Wash and soak rice for 30 minutes. Cook until 80% done, then drain.
+Marinate beef with yogurt, salt, turmeric, chili powder, biryani masala, and ginger garlic paste. Rest 30 minutes.
+In a pot, heat ghee, add whole spices, and sauté onions until golden brown (~10 min).
+Add tomatoes and cook until soft. Add marinated beef and cook on medium heat for 20–30 minutes until tender.
+Layer cooked rice over beef mixture. Sprinkle chopped coriander, mint, and a bit of ghee.
+Cover and cook on low heat (dum) for 15 minutes.
+Serve hot with raita or pickle.`
   },
   {
     title: "Egg Fried Rice",
@@ -93,8 +134,146 @@ Sauté chopped vegetables until slightly tender.
 Add cooked rice and mix well.
 Pour soy sauce, pepper, and salt. Stir-fry everything.
 Add scrambled eggs and spring onions. Serve hot.`
+  },
+  {
+    title: "Sambar",
+    image: "src/img/sambar.jpg",
+    ingredients: [
+      "1 cup toor dal",
+      "2 cups mixed vegetables",
+      "1 tbsp sambar powder",
+      "1/2 tsp turmeric",
+      "1 tsp mustard seeds",
+      "A few curry leaves",
+      "2 dried red chilies",
+      "1 tbsp tamarind pulp",
+      "Salt to taste"
+    ],
+    steps: `Pressure cook toor dal with turmeric until soft (~15 minutes).
+Boil vegetables until tender.
+Add sambar powder, tamarind pulp, and salt to the cooked dal and vegetables, simmer for 10–12 minutes.
+In a small pan, heat oil, add mustard seeds, curry leaves, and dried red chilies. Let them splutter.
+Pour the tempering over the sambar.
+Serve hot with rice or dosa.`
+  },
+  {
+    title: "Fish Curry",
+    image: "src/img/fish-curry.jpg",
+    ingredients: [
+      "500 g fish slices",
+      "2 tbsp chili powder",
+      "1 tsp turmeric",
+      "1 tbsp tamarind pulp",
+      "1 onion, chopped",
+      "2 green chilies",
+      "Curry leaves",
+      "1 tbsp ginger garlic paste",
+      "Salt to taste"
+    ],
+    steps: `Heat oil in a pan, sauté onions, green chilies, curry leaves.
+Add ginger garlic paste, cook for 2 minutes.
+Add chili powder, turmeric, tamarind, and salt with water. Bring to a boil.
+Add fish pieces, cover and cook on medium for 10–12 minutes.
+Serve with rice.`
+  },
+  {
+    title: "Gobi Manchurian",
+    image: "src/img/gobi-manchurian.jpg",
+    ingredients: [
+      "1 medium cauliflower (florets)",
+      "2 tbsp cornflour",
+      "2 tbsp all-purpose flour",
+      "1 tsp chili powder",
+      "2 cloves garlic",
+      "2 tbsp soy sauce",
+      "2 tbsp tomato ketchup",
+      "Spring onion for garnish"
+    ],
+    steps: `Boil cauliflower for 3–4 minutes. Drain.
+Mix flour, cornflour, chili powder, and water to make batter. Coat florets and deep fry until crisp.
+In a pan, sauté garlic, add sauces and 2 tbsp water.
+Toss fried florets in sauce for 2 minutes.
+Garnish and serve hot.`
+  },
+  {
+    title: "Upma",
+    image: "src/img/upma.jpg",
+    ingredients: [
+      "1 cup rava (semolina)",
+      "1 onion, chopped",
+      "2 green chilies",
+      "1 tsp mustard seeds",
+      "A few curry leaves",
+      "2 cups water",
+      "Salt and oil"
+    ],
+    steps: `Roast rava till light golden (~4 minutes). Set aside.
+In pan, heat oil, splutter mustard seeds, curry leaves.
+Add onions, chilies, sauté till soft (~3 min).
+Add water and salt, bring to boil.
+Stir in rava slowly, cook while stirring until thick (~5 minutes).
+Serve hot with chutney.`
+  },
+  {
+    title: "Butter Chicken",
+    image: "src/img/butter-chicken.jpg",
+    ingredients: [
+      "500 g chicken",
+      "1/2 cup yogurt",
+      "1 tbsp ginger garlic paste",
+      "2 tomatoes",
+      "1 onion",
+      "2 tbsp butter",
+      "1/2 cup cream",
+      "Spices: garam masala, chili powder, turmeric",
+      "Salt"
+    ],
+    steps: `Marinate chicken with yogurt, ginger garlic paste, spices—rest 30 min.
+Grill or pan-fry until cooked (~10 min).
+Blend tomatoes, onion to smooth paste.
+Heat butter, add paste and spices—cook ~5–7 min.
+Add chicken, cream, simmer 10 minutes.
+Serve hot with naan or rice.`
+  },
+  {
+    title: "Tandoori Chicken",
+    image: "src/img/tandoori-chicken.jpg",
+    ingredients: [
+      "4 chicken legs",
+      "1 cup yogurt",
+      "1 tbsp ginger garlic paste",
+      "1 tsp chili powder",
+      "1/2 tsp turmeric",
+      "1 tsp garam masala",
+      "Juice of 1 lemon",
+      "Salt"
+    ],
+    steps: `Score chicken pieces. Marinate with all ingredients and refrigerate 4–6 hours.
+Grill or bake at 200°C for 25–30 minutes until cooked and slightly charred.
+Serve hot with onion salad and lemon wedges.`
+  },
+  {
+    title: "Egg Curry",
+    image: "src/img/egg-curry.jpg",
+    ingredients: [
+      "4 boiled eggs",
+      "1 onion, chopped",
+      "2 tomatoes, chopped",
+      "1 tbsp ginger garlic paste",
+      "1 tsp chili powder",
+      "1/2 tsp turmeric",
+      "1 tsp garam masala",
+      "Salt",
+      "Coriander for garnish"
+    ],
+    steps: `Heat oil, sauté onions till golden.
+Add ginger garlic paste, tomatoes, and spices. Cook ~6 minutes until soft.
+Add water and salt, bring to a boil.
+Add boiled eggs, simmer for 5–6 minutes.
+Garnish and serve with chapati or rice.`
   }
 ];
+
 
 
 
