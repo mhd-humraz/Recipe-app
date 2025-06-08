@@ -68,7 +68,7 @@ This project is licensed under the MIT License.
 Created and maintained by **Mhd Humraz**.
 Special thanks to all who inspired and contributed ideas.
 
-## 🤖 ** future plans
+## 🤖  future plans
  
 - [ ] Add recipe categories (e.g., Breakfast, Lunch, Dinner, Desserts)
 
