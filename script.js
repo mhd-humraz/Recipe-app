@@ -39,7 +39,7 @@ title: "Masala Dosa",
   {
     title: "Sambar",
     image: "src/img/sambar.jpg",
-    ingredients: [
+    ingredients: 
    
   },
   {
@@ -65,7 +65,7 @@ title: "Masala Dosa",
   {
     title: "Tandoori Chicken",
     image: "src/img/tandoori-chicken.jpg",
-dges.
+
   },
   {
     title: "Egg Curry",
