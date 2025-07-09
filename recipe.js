@@ -69,3 +69,79 @@ function updateTimerDisplay() {
   const seconds = timeLeft % 60;
   timerDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 }
+// Function to load and display recipe
+function loadRecipe() {
+  // Get recipe ID from URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const recipeId = urlParams.get('id');
+  const recipe = getRecipeById(recipeId);
+
+  if (!recipe) {
+    document.getElementById('recipe-content').innerHTML = `
+      <div class="error-message">
+        <h2>Recipe not found</h2>
+        <a href="index.html" class="btn">Return to homepage</a>
+      </div>
+    `;
+    return;
+  }
+
+  // Update page title
+  document.title = `${recipe.title} | RecipeMaster`;
+
+  // Populate recipe data
+  const ingredientsList = recipe.ingredients ? recipe.ingredients.map(ing => `
+    <li>
+      <input type="checkbox" id="ing-${ing.replace(/\s+/g, '-')}">
+      <label for="ing-${ing.replace(/\s+/g, '-')}">${ing}</label>
+    </li>
+  `).join('') : '';
+
+  const stepsList = recipe.steps ? recipe.steps.map((step, i) => `
+    <div class="step">
+      <div class="step-number">${i + 1}</div>
+      <div class="step-content">
+        <p>${step}</p>
+      </div>
+    </div>
+  `).join('') : '';
+
+  document.getElementById('recipe-content').innerHTML = `
+    <div class="recipe-header">
+      <img src="${recipe.image}" alt="${recipe.title}" class="recipe-hero">
+      <div class="recipe-title">
+        <h1>${recipe.title}</h1>
+        <div class="recipe-meta">
+          <span><i class="fas fa-clock"></i> ${recipe.time}</span>
+          <span><i class="fas fa-utensils"></i> ${recipe.servings} servings</span>
+          <span><i class="fas fa-signal"></i> ${recipe.difficulty}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="recipe-body">
+      <section class="ingredients">
+        <h2><i class="fas fa-shopping-basket"></i> Ingredients</h2>
+        <ul class="ingredient-list">
+          ${ingredientsList}
+        </ul>
+      </section>
+
+      <section class="instructions">
+        <h2><i class="fas fa-list-ol"></i> Instructions</h2>
+        ${stepsList}
+      </section>
+    </div>
+  `;
+}
+
+// Initialize recipe page
+if (document.getElementById('recipe-content')) {
+  document.addEventListener('DOMContentLoaded', () => {
+    loadRecipe();
+    
+    // Your existing timer and cooking mode code
+    const cookingModeBtn = document.querySelector('.btn-cooking-mode');
+    // ... rest of your timer code ...
+  });
+}
