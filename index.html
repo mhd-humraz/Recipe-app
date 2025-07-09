@@ -1,43 +1,108 @@
-</html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Recipe App - Home</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RecipeMaster | Discover Culinary Delights</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header">
     <div class="container">
       <nav class="navbar">
-        <a href="index.html" class="nav-logo">Recipes Kitchen</a>
+        <a href="index.html" class="nav-logo">
+          <i class="fas fa-utensils"></i>
+          RecipeMaster
+        </a>
         <div class="nav-links">
-          <a href="index.html" class="active">Home</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="#" class="nav-link">Categories</a>
+          <a href="#" class="nav-link">Meal Plans</a>
+          <a href="#" class="nav-link">Saved</a>
+          <a href="#" class="nav-link">About</a>
         </div>
       </nav>
     </div>
   </header>
 
-  <main class="main-content">
-    <div class="container">
-      <section class="search-section">
-        <h1 class="title">Discover Delicious Recipes</h1>
-        <p class="subtitle">Find your next favorite meal</p>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title">Discover Culinary Delights</h1>
+        <p class="hero-subtitle">Find, save, and create delicious recipes from around the world. Perfect for home cooks and food enthusiasts.</p>
+        
         <div class="search-container">
-          <input type="text" id="search" placeholder="Search recipes..." class="search-input" />
-          <button class="search-button"><i class="fas fa-search"></i></button>
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" class="search-input" placeholder="Search for recipes, ingredients, or chefs...">
         </div>
-      </section>
-      <div id="recipes-container" class="recipes-grid"></div>
+        
+        <div class="filters">
+          <button class="filter-btn active"><i class="fas fa-fire"></i> Trending</button>
+          <button class="filter-btn"><i class="fas fa-clock"></i> Quick Meals</button>
+          <button class="filter-btn"><i class="fas fa-leaf"></i> Vegetarian</button>
+          <button class="filter-btn"><i class="fas fa-bolt"></i> High Protein</button>
+          <button class="filter-btn"><i class="fas fa-flag"></i> Cuisines</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="recipes-grid" id="recipes-container">
+        <!-- Recipe cards will be inserted here by JavaScript -->
+      </div>
     </div>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2025 Recipes Kitchen. All rights reserved.humraz</p>
+      <div class="footer-content">
+        <div class="footer-col">
+          <a href="#" class="footer-logo">RecipeMaster</a>
+          <p>Discover, create, and share your favorite recipes with our global community of food lovers.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="#">Popular Recipes</a></li>
+            <li class="footer-link"><a href="#">Seasonal Picks</a></li>
+            <li class="footer-link"><a href="#">Chef Specials</a></li>
+            <li class="footer-link"><a href="#">Meal Plans</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Company</h3>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="#">About Us</a></li>
+            <li class="footer-link"><a href="#">Careers</a></li>
+            <li class="footer-link"><a href="#">Blog</a></li>
+            <li class="footer-link"><a href="#">Press</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Support</h3>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="#">Help Center</a></li>
+            <li class="footer-link"><a href="#">Contact Us</a></li>
+            <li class="footer-link"><a href="#">Privacy Policy</a></li>
+            <li class="footer-link"><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <p>&copy; 2023 RecipeMaster. All rights reserved. Crafted with <i class="fas fa-heart" style="color: var(--primary);"></i> by Humraz</p>
+      </div>
     </div>
   </footer>
 
