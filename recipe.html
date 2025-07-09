@@ -1,97 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Recipe Details</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-/* Recipe Details Page Enhancements */
-body {
-  background-color: #f0f4f8; /* soft light blue-gray */
-  font-family: Arial, sans-serif;
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 0 10px;
-}
-
-#recipe-image {
-  display: block;
-  margin: 0 auto 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-#recipe-title {
-  text-align: center;
-  color: #2c3e50;
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-h3 {
-  color: #34495e;
-  margin-top: 20px;
-}
-
-#ingredients-list {
-  list-style-type: disc;
-  padding-left: 40px;
-  margin-bottom: 20px;
-}
-
-#ingredients-list li {
-  padding: 5px 0;
-  font-size: 16px;
-  color: #555;
-}
-
-#steps {
-  background-color: #fff;
-  padding: 15px;
-  border-left: 5px solid #3498db;
-  border-radius: 5px;
-  font-size: 16px;
-  color: #333;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  line-height: 1.6;
-}
-
-a {
-  display: block;
-  text-align: center;
-  margin-top: 30px;
-  color: #3498db;
-  font-weight: bold;
-}
-.recipe-wrapper {
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  margin-top: 40px;
-}
-#ingredients-list,
-#steps {
-  background-color: #ffffff;
-  border-radius: 8px;
-  padding: 15px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Detail | RecipeMaster</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="recipe-wrapper">
-    <h1 id="recipe-title"></h1>
-    <img id="recipe-image" src="" alt="" style="max-width: 400px;" />
-    <h3>Ingredients:</h3>
-    <ul id="ingredients-list"></ul>
-    <h3>Steps:</h3>
-    <p id="steps"></p>
-    <a href="index.html">← Back to recipes </a>
-  </div>
-  <script src="recipe.js"></script>
-</body>
+  <header class="header">
+      
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+          <i class="fas fa-utensils"></i>
+          RecipeMaster
+        </a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="#" class="nav-link">Categories</a>
+          <a href="#" class="nav-link">Meal Plans</a>
+          <a href="#" class="nav-link">Saved</a>
+          <a href="#" class="nav-link">About</a>
+        </div>
+      </nav>
+    </div>
+ 
+<!-- Same header as before -->
+  </header>
 
+  <main class="recipe-detail">
+    <div class="container">
+      <!-- Recipe Header -->
+      <div class="recipe-header">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Creamy Garlic Pasta" class="recipe-hero">
+        <div class="recipe-title">
+          <h1>Creamy Garlic Parmesan Pasta</h1>
+          <div class="recipe-meta">
+            <span><i class="fas fa-clock"></i> 25 mins</span>
+            <span><i class="fas fa-utensils"></i> 4 servings</span>
+            <span><i class="fas fa-fire"></i> Medium</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recipe Content -->
+      <div class="recipe-content">
+        <!-- Ingredients -->
+        <section class="ingredients">
+          <h2><i class="fas fa-shopping-basket"></i> Ingredients</h2>
+          <ul class="ingredient-list">
+            <li>
+              <input type="checkbox" id="ing1">
+              <label for="ing1">8 oz fettuccine pasta</label>
+            </li>
+            <li>
+              <input type="checkbox" id="ing2">
+              <label for="ing2">3 cloves garlic, minced</label>
+            </li>
+            <li>
+              <input type="checkbox" id="ing3">
+              <label for="ing3">1 cup heavy cream</label>
+            </li>
+            <li>
+              <input type="checkbox" id="ing4">
+              <label for="ing4">½ cup grated parmesan</label>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Cooking Steps -->
+        <section class="instructions">
+          <h2><i class="fas fa-list-ol"></i> Instructions</h2>
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <p>Bring a large pot of salted water to boil. Cook pasta according to package instructions.</p>
+              <button class="timer-btn" data-time="8"><i class="fas fa-clock"></i> Start Timer (8 mins)</button>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <p>In a pan, sauté garlic in butter until fragrant (1-2 mins).</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <p>Add heavy cream and simmer for 3 mins. Stir in parmesan until melted.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Video Embed -->
+        <section class="video">
+          <h2><i class="fas fa-video"></i> Video Guide</h2>
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Cooking Mode Bar -->
+  <div class="cooking-mode-bar">
+    <button class="btn-cooking-mode"><i class="fas fa-utensils"></i> Start Cooking Mode</button>
+  </div>
+
+  <!-- Timer Modal -->
+  <div class="timer-modal hidden">
+    <div class="timer-content">
+      <h3>⏲️ Timer</h3>
+      <div class="timer-display">08:00</div>
+      <div class="timer-controls">
+        <button class="timer-start"><i class="fas fa-play"></i></button>
+        <button class="timer-pause"><i class="fas fa-pause"></i></button>
+        <button class="timer-reset"><i class="fas fa-redo"></i></button>
+      </div>
+      <button class="timer-close"><i class="fas fa-times"></i></button>
+    </div>
+  </div>
+
+  <script src="recipe-script.js"></script>
+</body>
 </html>
