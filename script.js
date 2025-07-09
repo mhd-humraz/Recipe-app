@@ -65,6 +65,72 @@ const recipes = [
     difficulty: "Medium",
     category: "Seafood",
     badge: "Premium"
+  },
+  {
+    id: 7,
+    title: "Paneer Butter Masala",
+    description: "A rich, creamy North Indian curry made with paneer cubes simmered in a spiced tomato gravy.",
+    image: "https://images.unsplash.com/photo-1621961453503-7b4b8d0c5c88",
+    time: "30 mins",
+    servings: 4,
+    difficulty: "Medium",
+    category: "Indian",
+    badge: "Most Loved"
+  },
+  {
+    id: 8,
+    title: "Margherita Pizza",
+    description: "Classic Italian pizza topped with fresh mozzarella, basil, and tomato sauce.",
+    image: "https://images.unsplash.com/photo-1601924579440-3a60e8f4c5f2",
+    time: "45 mins",
+    servings: 2,
+    difficulty: "Medium",
+    category: "Italian",
+    badge: "Chef’s Choice"
+  },
+  {
+    id: 9,
+    title: "Mango Smoothie Bowl",
+    description: "A refreshing tropical smoothie bowl topped with fresh fruits, granola, and seeds.",
+    image: "https://images.unsplash.com/photo-1505253210343-d4fd5a52faaa",
+    time: "10 mins",
+    servings: 1,
+    difficulty: "Easy",
+    category: "Vegan",
+    badge: "Refreshing"
+  },
+  {
+    id: 10,
+    title: "Chicken Biryani",
+    description: "Aromatic basmati rice cooked with spiced chicken, herbs, and saffron in traditional dum style.",
+    image: "https://images.unsplash.com/photo-1604909053175-3762be7c47c7",
+    time: "1 hr",
+    servings: 5,
+    difficulty: "Hard",
+    category: "Indian",
+    badge: "Festive"
+  },
+  {
+    id: 11,
+    title: "Sushi Platter",
+    description: "An assorted platter of sushi rolls including California rolls, nigiri, and spicy tuna rolls.",
+    image: "https://images.unsplash.com/photo-1553621042-f6e147245754",
+    time: "50 mins",
+    servings: 3,
+    difficulty: "Hard",
+    category: "Japanese",
+    badge: "Exotic"
+  },
+  {
+    id: 12,
+    title: "French Toast with Berries",
+    description: "Golden-brown French toast topped with maple syrup, fresh berries, and powdered sugar.",
+    image: "https://images.unsplash.com/photo-1559628231-63700113fc4d",
+    time: "20 mins",
+    servings: 2,
+    difficulty: "Easy",
+    category: "Breakfast",
+    badge: "Quick Bite"
   }
 ];
 
