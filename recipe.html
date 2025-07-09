@@ -123,7 +123,49 @@
       <button class="timer-close"><i class="fas fa-times"></i></button>
     </div>
   </div>
+<script>
+  // Inside recipe.html
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the ID from URL (like recipe.html?id=1)
+  const urlParams = new URLSearchParams(window.location.search);
+  const recipeId = urlParams.get('id');
+  
+  // Now load the recipe data based on this ID
+  loadRecipe(recipeId);
+});
 
-  <script src="recipe.js"></script>
+function loadRecipe(id) {
+  // For now, we'll use sample data
+  const recipes = {
+    1: {
+      title: "Creamy Garlic Pasta",
+      ingredients: ["pasta", "garlic", "cream"],
+      steps: ["Boil water", "Cook pasta", "Make sauce"]
+    },
+    2: {
+      title: "Avocado Salad",
+      ingredients: ["avocado", "tomato", "lettuce"],
+      steps: ["Chop veggies", "Mix dressing", "Combine all"]
+    }
+  };
+  
+  const recipe = recipes[id];
+  
+  if (recipe) {
+    // Update the page with recipe data
+    document.title = recipe.title + " | My Recipe App";
+    document.getElementById('recipe-title').textContent = recipe.title;
+    // Add similar updates for ingredients and steps
+  } else {
+    // Recipe not found - show error
+    document.getElementById('recipe-content').innerHTML = `
+      <h2>Recipe not found</h2>
+      <p><a href="index.html">Return to homepage</a></p>
+    `;
+  }
+}
+
+</script>
+  <script src="recipe.js"> </script>
 </body>
 </html>
