@@ -181,3 +181,49 @@ document.addEventListener('DOMContentLoaded', () => {
     // In a real app, you would filter recipes based on search term
   });
 });
+// Recipe database - keep this as is
+const recipes = [
+  // ... your existing recipe data ...
+];
+
+// Utility function to get recipe by ID
+function getRecipeById(id) {
+  return recipes.find(recipe => recipe.id === parseInt(id));
+}
+
+// Function to render recipe cards on homepage
+function renderRecipeCards() {
+  const container = document.getElementById('recipes-container');
+  if (!container) return;
+
+  container.innerHTML = recipes.map(recipe => `
+    <a href="recipe.html?id=${recipe.id}" class="recipe-card">
+      <img src="${recipe.image}" alt="${recipe.title}" class="recipe-image">
+      ${recipe.badge ? `<span class="recipe-badge">${recipe.badge}</span>` : ''}
+      <div class="recipe-content">
+        <h3 class="recipe-title">${recipe.title}</h3>
+        <p class="recipe-description">${recipe.description}</p>
+        <div class="recipe-meta">
+          <span><i class="fas fa-clock"></i> ${recipe.time}</span>
+          <span><i class="fas fa-utensils"></i> ${recipe.servings} servings</span>
+        </div>
+      </div>
+    </a>
+  `).join('');
+}
+
+// Initialize homepage
+if (document.getElementById('recipes-container')) {
+  document.addEventListener('DOMContentLoaded', () => {
+    renderRecipeCards();
+    
+    // Filter button functionality
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+      });
+    });
+  });
+}
